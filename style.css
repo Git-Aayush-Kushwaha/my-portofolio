@@ -1,0 +1,113 @@
+
+        body {
+            background: linear-gradient(135deg, hsla(280, 100%, 92%, 1) 0%, hsla(194, 33%, 90%, 1) 100%);
+            background-repeat: no-repeat;
+            font-family: "Asta sans", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+        
+        /* Top bar handling */
+        #topNavbar {
+            display: inline-flex;
+            width: 100%;
+            
+        }
+        
+        #avatar {
+            font-size: 10px;
+            padding-top: 13px;
+            height: 30px;
+        }
+
+        #switchMode {
+            height: 30px;
+            width: 30px;
+        }
+
+        
+        #connect {
+            margin: 10x;
+            padding-bottom:4px;
+            padding-left: 5px;
+            height: 40px;
+            width: 70px;
+            font-weight: 100;
+            font-size: 9px;
+        }
+
+        
+
+        #mode {
+            background-color: rgba(82, 114, 143, 0);
+            position: absolute;
+            right: 15px;
+            font-size: 9px;
+            height: 40px;
+        }
+        
+
+        /*handling div myWindow */
+        #myWindow {
+            background-color: rgba(0, 255, 255, 0);
+            padding: 10px;;
+            border: 2px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 13px;
+            margin-bottom: 40px;
+        }
+
+        
+
+        #exploreBtn {
+            height: 40px;
+            width: 120px;
+            background: linear-gradient(135deg, hsla(280, 100%, 81%, 1) 0%, rgb(0, 255, 225) 100%);
+            color: rgb(0, 0, 0);
+            font-family: 'Asta sans' serif;
+            font-weight: bold;
+            border: 2px;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+            box-shadow: 1px 1px ;
+        }
+        
+        #exploreBtn:hover {
+            font-size: 12px;
+            width: 120px;
+            height: 40px;
+            opacity: 0.7px;
+            box-shadow: none;
+            cursor: pointer;
+            background-color: rgb(0, 94, 255);
+            color: rgb(0, 0, 0); 
+        }
+        
+        /*handling projects and achivements*/
+        #youtube {
+            font-size: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            text-align: center;
+        }
+        
+        #progressBar {
+            margin-bottom: 5px;
+            transform-origin: left;
+            height: 3px;
+            width: 100%;
+            background-color: black;
+            position: fixed;
+            left: 5;
+            scale: 0 1;
+            animation: scroll-it linear;
+            animation-timeline: scroll();
+
+        }
+
+        @keyframes scroll-it {
+            to {scale: 1 0.8;}
+        }
+        
